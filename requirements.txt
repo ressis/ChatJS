@@ -1,0 +1,29 @@
+Goals:
+1. Must suppport multiple users
+2. Users have a unique nickname
+3. Users can change their nickname (provided that the name is unique)
+4. Messages typed by users are sent to everyone in the current channel
+5. Messages containing URLs should transform into hyperlinks
+6. One default channel: all
+
+Non-Goals:
+1. Users have persistant user accounts
+2. Chat program is not allowed to introduce any new latency (other than network latency)
+3. Multiple chat channels are supported
+4. A user can start private messages with another user by clicking on their name or typing /msg <username>
+5. Users can create new channels by clicking on a "plus" button
+6. New channels contain only their creator
+7. Users are moderators for channels that they create
+8. Moderators can invite other users to chat
+9. Moderators can ban users from chat
+10. Moderators can temp-ban users from chat
+11. Receiving a temp ban replaces the content of the chat window with a timer showing the remainder of the temp ban time
+12. Receiving a ban removes the chat tab
+13. Private messages are like normal channels, but without moderators
+
+Ignore list:
+1. A User can ignore another user, such that they never receive messages from them.
+2. If another user attempts to private message a user who is ignoreing them, they should get an error message
+
+No longer goals:
+1. Users can set a channel password on channels they create
